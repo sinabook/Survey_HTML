@@ -1,0 +1,137 @@
+<html>
+    <title>Survey</title>
+    <head>
+        <div align="center"><h1 style="color: #000000;">How do you think about me?
+        <br><small>(Your opinion means nothing)</small></h1><div>
+    </head>
+    <body bgcolor="white">
+        <script src="hs.js"></script>
+        
+        <style>
+            body{
+                background-color: #ffffff;
+                font-family: Verdana;
+                text-align:"left";
+            }
+            form{
+                background-color:rgb(110, 110, 110);
+                max-width: 500px;
+                margin: 8px;
+                padding: 25px 50px;
+                box-shadow: 2px 5px 10px rgb(0, 0, 0);
+            }
+            .form-control {
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid rgb(255, 255, 255);
+			border-radius: 5px;
+			font-family: Tahoma;
+			padding: 10px;
+			display: block;
+			width: 100%;
+
+		}
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+		button {
+			background-color: #ffffff;
+			border: 1px solid #ffffff;
+			border-radius: 10px;
+			font-family: inherit;
+			font-size: 20px;
+			display: block;
+            height: 30px;
+			width: 100%;
+			margin-top: 30px;
+			margin-bottom: 8px;
+		}
+        </style>
+        <form id="form">
+            <div class="form-control">
+                <label style="color: #ffffff;"for="name" id="label-name">
+                    Name
+                </label>
+                <input style="color: rgb(0, 0, 0);"type="text"
+                    id="name"
+                    placeholder="Enter your name"required/>
+            </div>
+
+            <div class="form-control">
+                <label style="color: #ffffff;"for="age" id="label-age">
+                    Age
+                </label>
+                <input type="text"
+                    id="age"
+                    placeholder="Enter your Age" required />
+            </div>
+
+            <div class="form-control">
+                <label style="color: #ffffff;" for="email" id="label-email">
+                    Email
+                </label>
+                <input type="text"
+                    id="email"
+                    placeholder="Enter your Email" required/>
+            </div>
+            <div class="form-control">
+                <label style="color: #ffffff;" for="role" id="label-role">
+                    Which one of the following best decribe your relationship with me?
+                </label>
+                <select style="color: rgb(110, 110, 110);"name="role" id="role">
+                    <option value="Friend">My Friend</option>
+                    <option value="Roommate">My Roommate</option>
+                    <option value="Family">
+                        My dear family
+                    </option>
+                    <option value="Other">Other<smal>(Pleased to know you)</smal></option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label style="color: #ffffff;">
+                    Would you recommend me to others to be my friend?
+                    <br>
+                    <small>(I would be realy sad if you dont)</small>
+                </label>
+                <label for="recommed-1">
+                    <input type="checkbox"
+                        id="recommed-1"
+                        name="recommed"><span style="color: #ffffff;">Yes</span></input>
+                </label>
+                <label for="recommed-2">
+                    <input type="checkbox"
+                        id="recommed-2"
+                        name="recommed"><span style="color: #ffffff;">Maybe</span></input>
+                </label>
+                <label for="recommed-3">
+                    <input type="checkbox"
+                        id="recommed-3"
+                        name="recommed"><span style="color: #ffffff;">No</span></input>
+                </label>
+            </div>
+            <div class="form-control">
+                <label style="color: #ffffff;"for="comment">
+                    What are the things you think i can do better?
+                    <small> (Please be gentle) </small>
+                </label>
+                <textarea name="comment" id="comment"
+                    placeholder="Enter your comment here">
+                </textarea>
+            </div>
+            <button type="submit" value="submit">
+                Submit
+            </button>
+
+
+    </body>
+</html>
